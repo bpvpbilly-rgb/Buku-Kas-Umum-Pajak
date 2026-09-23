@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="id"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260922-05-b4f7588","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buku Kas Umum (BKU)</title>
+  <style>
+    :root {
+      --ink: #17324d;
+      --navy: #0d2942;
+      --blue: #176b87;
+      --teal: #0d9488;
+      --paper: #f4f7f8;
+      --line: #d7e0e5;
+      --danger: #a82920;
+      --success: #19623b;
+      --muted: #5c6f7b;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); }
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "DM Sans", "Segoe UI", sans-serif;
+    }
+    button, input { font: inherit; }
+    button { cursor: pointer; border: 0; }
+    button:focus-visible, input:focus-visible { outline: 3px solid rgba(23,107,135,.35); outline-offset: 2px; }
+    .app-shell { width: 100%; padding: 28px; }
+    .page-width { width: 100%; max-width: 1440px; margin: 0 auto; }
+    .paper-card { border: 1px solid var(--line); box-shadow: 0 10px 28px rgba(18,52,74,.07); border-radius: 16px; background: #fff; }
+    .header-band { overflow: hidden; color: #fff; background: var(--navy); }
+    .header-inner { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding: 30px 32px; }
+    .kicker { display: flex; gap: 9px; align-items: center; margin-bottom: 12px; color: #b7f3e8; font-size: .74rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .ledger-heading { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 4vw, 2.45rem); letter-spacing: -.02em; }
+    .header-description { max-width: 720px; margin: 12px 0 0; color: #dbeafe; line-height: 1.6; }
+    .save-note { display: flex; gap: 9px; align-items: center; padding: 12px 15px; color: #fff; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); border-radius: 12px; font-size: .86rem; white-space: nowrap; }
+    main { margin-top: 24px; }
+    .input-layout { display: grid; grid-template-columns: minmax(0,1.48fr) minmax(280px,.82fr); gap: 24px; animation: fadeUp .45s ease both; }
+    .panel { padding: 24px; }
+    .section-intro { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 20px; }
+    .icon-box { display: grid; width: 38px; height: 38px; place-items: center; flex: 0 0 auto; color: #08776e; background: #e6f7f4; border-radius: 10px; }
+    h2 { margin: 0; font-size: 1.16rem; }
+    .section-intro p, .help-text { margin: 5px 0 0; color: var(--muted); font-size: .88rem; line-height: 1.5; }
+    .field-label { display: block; margin-bottom: .38rem; color: #355369; font-size: .78rem; font-weight: 700; }
+    .field-input { width: 100%; padding: .72rem .8rem; color: #16324a; background: #fff; border: 1px solid #bfcdd5; border-radius: 9px; outline: none; transition: border-color .18s, box-shadow .18s; }
+    .field-input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(23,107,135,.14); }
+    .quick-row, .button-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .quick-row .field-input { flex: 1 1 270px; }
+    .divider { height: 1px; margin: 24px 0 20px; background: #e1e8eb; }
+    .form-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+    .form-grid .full { grid-column: 1 / -1; }
+    .category-fieldset { margin: 0; padding: 0; border: 0; }
+    .category-options { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    .category-option { display: flex; align-items: center; gap: 8px; padding: .72rem .8rem; color: #29475c; background: #f8fafb; border: 1px solid #bfcdd5; border-radius: 9px; cursor: pointer; font-size: .84rem; font-weight: 700; }
+    .category-option:has(input:checked) { color: #12465e; background: #e6f1f4; border-color: var(--blue); box-shadow: 0 0 0 2px rgba(23,107,135,.12); }
+    .category-option input { accent-color: var(--blue); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: .48rem; min-height: 40px; padding: .68rem .95rem; border-radius: 9px; font-size: .84rem; font-weight: 700; white-space: nowrap; transition: transform .18s, opacity .18s; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:disabled { cursor: wait; opacity: .55; transform: none; }
+    .action-primary { color: #fff; background: var(--blue); }
+    .action-secondary { color: #12465e; background: #e6f1f4; }
+    .action-danger { color: var(--danger); background: #fff0ef; border: 1px solid #f4c5c1; }
+    .action-export { color: var(--success); background: #e9f6ee; }
+    .message { min-height: 21px; margin: 10px 0 0; font-size: .86rem; }
+    .message.error { color: #b42318; }
+    .message.ok { color: #087443; }
+    .message.warn { color: #a56000; }
+    .side-stack { display: grid; gap: 24px; }
+    .calc-row { display: flex; justify-content: space-between; gap: 14px; padding: 12px; background: #f8fafb; border-radius: 9px; font-size: .88rem; }
+    .calc-row.tax { background: #fff8e8; }
+    .calc-row.withholding { background: #fff3ec; }
+    .calc-row strong { white-space: nowrap; }
+    .formula { margin: 5px 0 0; font-size: .74rem; color: #92400e; }
+    .formula.pph { color: #9a3412; }
+    .example { background: #f8fbfc; }
+    .summary-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 24px; }
+    .metric-card { padding: 16px; border-left: 5px solid var(--blue); }
+    .metric-card.tax { border-left-color: #b7791f; }
+    .metric-card.withholding { border-left-color: #8b5e34; }
+    .metric-label { margin: 0; color: #64748b; font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+    .metric-value { margin: 8px 0 0; font-size: 1.34rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .ledger-panel { margin-top: 24px; overflow: hidden; }
+    .ledger-top { padding: 24px; border-bottom: 1px solid #e1e8eb; }
+    .ledger-action-row { display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+    .ledger-description { margin: 5px 0 0; color: var(--muted); font-size: .88rem; }
+    .ledger-buttons { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+    .filter-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 20px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; min-width: 690px; border-collapse: collapse; }
+    th, td { padding: .82rem .76rem; text-align: left; vertical-align: top; border-bottom: 1px solid #e1e8eb; }
+    th { color: #3f5a6e; background: #edf3f5; font-size: .72rem; letter-spacing: .055em; text-transform: uppercase; }
+    .transaction-group-row th { padding: .7rem .76rem; color: #12465e; background: #e6f1f4; border-top: 12px solid #fff; font-size: .75rem; letter-spacing: .08em; }
+    .transaction-group-row:first-child th { border-top: 0; }
+    td { color: #29475c; font-size: .84rem; }
+    tbody tr:hover { background: #f8fbfc; }
+    .number { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .kind-pill { display: inline-block; padding: .22rem .46rem; color: #285b72; background: #e7f0f4; border-radius: 999px; font-size: .65rem; font-weight: 700; }
+    .desc { margin: 5px 0 0; line-height: 1.45; }
+    .empty-state { padding: 48px 24px; color: #64748b; text-align: center; }
+    .empty-icon { font-size: 2.25rem; opacity: .45; }
+    .empty-state h3 { margin: 10px 0 3px; color: #334e62; font-size: 1rem; }
+    .empty-state p { margin: 0; font-size: .88rem; }
+    footer { margin: 24px 0 0; color: #64748b; font-size: .75rem; text-align: center; }
+    .toast { position: fixed; right: 22px; bottom: 22px; z-index: 60; max-width: 380px; padding: .85rem 1rem; color: #fff; background: #17324d; border-radius: 12px; box-shadow: 0 14px 35px rgba(0,0,0,.18); }
+    .toast.error { background: var(--danger); }
+    .hidden { display: none !important; }
+    .modal-backdrop { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(8,30,47,.58); }
+    .modal { width: 100%; max-width: 450px; padding: 24px; }
+    .modal-top { display: flex; gap: 12px; }
+    .warning-symbol { display: grid; width: 38px; height: 38px; place-items: center; flex: 0 0 auto; color: #a82920; background: #fff0ef; border-radius: 50%; font-size: 1.05rem; }
+    .modal p { margin: 8px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
+    .modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 24px; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 980px) {
+      .input-layout { grid-template-columns: 1fr; }
+      .header-inner, .ledger-action-row { align-items: flex-start; flex-direction: column; }
+      .ledger-buttons { justify-content: flex-start; }
+    }
+    @media (max-width: 700px) {
+      .app-shell { padding: 16px; }
+      .header-inner, .panel, .ledger-top { padding: 22px; }
+      .summary-grid, .form-grid, .filter-grid { grid-template-columns: 1fr; }
+      .form-grid .full { grid-column: auto; }
+      .save-note { white-space: normal; }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/d80647b37084f0c6.editing_sdk.js" type="text/javascript" integrity="sha512-jCz+DtquKRDjnSrSxfhBCzqv2CNRnUAa0936TKD2DSOtf6OZkZ6z2RJ9PZqOhkoYVUsdKS+mJI9DS8ttXywBzw=="></script>
+  <script src="/_sdk/765e1fea0cec97ce.resizing_sdk.js" type="text/javascript" integrity="sha512-IRTJnqww0+HQ5V/LlWEQrlD5SrYHaVvaeVoNe8HYQXoaguzUGheSd9+n9s6WOgaTcEH0g37DuINHZ9aqfzWjlw=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(244, 247, 248);">
+  <div class="app-shell">
+   <div class="page-width">
+    <header data-template-id="app-header" class="header-band paper-card canva-header" style="background: rgb(13, 41, 66);">
+     <div class="header-inner">
+      <div>
+       <div class="kicker"><span aria-hidden="true">◈</span><span data-template-id="header-kicker" class="canva-text" style="color: rgb(183, 243, 232); font-weight: 700; font-style: normal; font-size: 15px; letter-spacing: 0.1rem;">BPVP LOMBOK TIMUR - KEUANGAN</span>
+       </div>
+       <h1 data-template-id="page-title" class="ledger-heading canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 30px;">Buku Kas Umum (BKU)</h1>
+       <p data-template-id="header-description" class="header-description canva-text" style="color: rgb(219, 234, 254); font-weight: 400; font-style: normal; font-size: 15px;">Catat belanja bahan dan setoran pajak dalam buku kas yang rapi, mandiri, dan siap digunakan tanpa internet.</p>
+      </div>
+      <div class="save-note"><span aria-hidden="true">✓</span><span data-template-id="save-note" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 15px;">Data tersimpan di browser ini</span>
+      </div>
+     </div>
+    </header>
+    <main>
+     <section class="input-layout" aria-label="Input dan kalkulasi transaksi">
+      <section data-template-id="input-panel" class="panel paper-card canva-panel" style="background: rgb(255, 255, 255);">
+       <h2 data-template-id="form-title" class="canva-text" style="color: rgb(23, 50, 77); font-weight: 700; font-style: normal; font-size: 23px;">Rincian transaksi belanja bahan</h2>
+       <form id="transaction-form" novalidate="">
+        <div class="form-grid" style="margin-top:16px">
+         <div class="full">
+          <label data-template-id="amount-label" class="field-label canva-text" for="amount" style="color: rgb(53, 83, 105); font-weight: 700; font-style: normal; font-size: 15px;">Nominal belanja</label> <input id="amount" class="field-input" type="text" inputmode="decimal" autocomplete="off" placeholder="Contoh: 16.512.000">
+         </div>
+         <div class="full">
+          <fieldset class="category-fieldset">
+           <legend data-template-id="category-label" class="field-label canva-text" style="color: rgb(53, 83, 105); font-weight: 700; font-style: normal; font-size: 15px;">Kategori pajak</legend>
+           <div class="category-options">
+            <label class="category-option"><input type="radio" name="tax-category" value="PPN dan PPh 22"><span data-template-id="category-ppn-pph22" class="canva-text" style="color: rgb(41, 71, 92); font-weight: 700; font-style: normal; font-size: 15px;">PPN dan PPh 22</span></label><label class="category-option"><input type="radio" name="tax-category" value="PPh 21"><span data-template-id="category-pph21" class="canva-text" style="color: rgb(41, 71, 92); font-weight: 700; font-style: normal; font-size: 15px;">PPh 21</span></label><label class="category-option"><input type="radio" name="tax-category" value="PPh 23"><span data-template-id="category-pph23" class="canva-text" style="color: rgb(41, 71, 92); font-weight: 700; font-style: normal; font-size: 15px;">PPh 23</span></label><label class="category-option"><input type="radio" name="tax-category" value="PPh 24"><span data-template-id="category-pph24" class="canva-text" style="color: rgb(41, 71, 92); font-weight: 700; font-style: normal; font-size: 15px;">PPh 24</span></label>
+           </div>
+           <div id="transaction-type-field" class="hidden" style="margin-top:16px">
+            <label data-template-id="transaction-type-label" class="field-label canva-text" style="color: rgb(53, 83, 105); font-weight: 700; font-style: normal; font-size: 15px;">Jenis transaksi</label>
+            <div id="transaction-type-options" class="category-options"></div>
+           </div>
+          </fieldset>
+          <div id="detail-field" class="hidden">
+           <label data-template-id="description-label" class="field-label canva-text" for="description" style="color: rgb(53, 83, 105); font-weight: 700; font-style: normal; font-size: 15px;">Keterangan</label> <input id="description" class="field-input" type="text" autocomplete="off" placeholder="Tuliskan nama pihak atau uraian transaksi">
+          </div>
+         </div>
+        </div>
+        <p id="form-message" class="message" aria-live="polite"></p>
+        <div class="button-row">
+         <button id="auto-add-button" data-template-id="auto-add-button" class="btn action-primary canva-button" type="submit" style="background: rgb(23, 107, 135); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 15px;">＋ Tambah Otomatis</button> <button id="manual-add-button" data-template-id="manual-add-button" class="btn action-secondary canva-button" type="button" style="background: rgb(230, 241, 244); color: rgb(18, 70, 94); font-weight: 700; font-style: normal; font-size: 15px;">＋ Tambah Manual</button>
+        </div>
+       </form>
+      </section>
+     </section>
+     <section class="summary-grid" aria-label="Ringkasan BKU">
+      <article data-template-id="summary-payment-card" class="metric-card paper-card canva-card" style="background: rgb(255, 255, 255);">
+       <p data-template-id="summary-payment-label" class="metric-label canva-text" style="color: rgb(100, 116, 139); font-weight: 700; font-style: normal; font-size: 15px;">Total bayar</p>
+       <p id="summary-payment" class="metric-value">Rp0</p>
+      </article>
+      <article data-template-id="summary-ppn-card" class="metric-card tax paper-card canva-card" style="background: rgb(255, 255, 255);">
+       <p data-template-id="summary-ppn-label" class="metric-label canva-text" style="color: rgb(100, 116, 139); font-weight: 700; font-style: normal; font-size: 15px;">Total PPN disetor</p>
+       <p id="summary-ppn" class="metric-value">Rp0</p>
+      </article>
+      <article data-template-id="summary-pph-card" class="metric-card withholding paper-card canva-card" style="background: rgb(255, 255, 255);">
+       <p data-template-id="summary-pph-label" class="metric-label canva-text" style="color: rgb(100, 116, 139); font-weight: 700; font-style: normal; font-size: 15px;">Total PPh Pasal 22</p>
+       <p id="summary-pph" class="metric-value">Rp0</p>
+      </article>
+      <article data-template-id="summary-pph21-card" class="metric-card withholding paper-card canva-card" style="background: rgb(255, 255, 255);">
+       <p data-template-id="summary-pph21-label" class="metric-label canva-text" style="color: rgb(100, 116, 139); font-weight: 700; font-style: normal; font-size: 15px;">TOTAL PPH 21</p>
+       <p id="summary-pph21" class="metric-value">Rp0</p>
+      </article>
+      <article data-template-id="summary-pph23-card" class="metric-card withholding paper-card canva-card" style="background: rgb(255, 255, 255);">
+       <p data-template-id="summary-pph23-label" class="metric-label canva-text" style="color: rgb(100, 116, 139); font-weight: 700; font-style: normal; font-size: 15px;">TOTAL PPH 23</p>
+       <p id="summary-pph23" class="metric-value">Rp0</p>
+      </article>
+      <article data-template-id="summary-pph24-card" class="metric-card withholding paper-card canva-card" style="background: rgb(255, 255, 255);">
+       <p data-template-id="summary-pph24-label" class="metric-label canva-text" style="color: rgb(100, 116, 139); font-weight: 700; font-style: normal; font-size: 15px;">TOTAL PPH 24</p>
+       <p id="summary-pph24" class="metric-value">Rp0</p>
+      </article>
+     </section>
+     <section data-template-id="ledger-panel" class="ledger-panel paper-card canva-panel" style="background: rgb(255, 255, 255);">
+      <div class="ledger-top">
+       <div class="ledger-action-row">
+        <div>
+         <h2 data-template-id="ledger-title" class="canva-text" style="color: rgb(23, 50, 77); font-weight: 700; font-style: normal; font-size: 23px;">Daftar transaksi BKU</h2>
+         <p data-template-id="ledger-description" class="ledger-description canva-text" style="color: rgb(92, 111, 123); font-weight: 400; font-style: normal; font-size: 15px;">Gunakan filter untuk menampilkan transaksi tertentu. Pilih baris sebelum menghapusnya.</p>
+        </div>
+        <div class="ledger-buttons">
+         <button id="delete-selected-button" data-template-id="delete-selected-button" class="btn action-danger canva-button" type="button" style="background: rgb(255, 240, 239); color: rgb(168, 41, 32); font-weight: 700; font-style: normal; font-size: 15px;">Hapus Terpilih</button> <button id="export-button" data-template-id="export-button" class="btn action-export canva-button" type="button" style="background: rgb(233, 246, 238); color: rgb(25, 98, 59); font-weight: 700; font-style: normal; font-size: 15px;">Export CSV</button> <button id="excel-button" data-template-id="excel-button" class="btn action-export canva-button" type="button" style="background: rgb(233, 246, 238); color: rgb(25, 98, 59); font-weight: 700; font-style: normal; font-size: 15px;">Unduh Excel</button> <button id="html-button" data-template-id="html-button" class="btn action-secondary canva-button" type="button" style="background: rgb(230, 241, 244); color: rgb(18, 70, 94); font-weight: 700; font-style: normal; font-size: 15px;">Unduh HTML</button> <button id="reset-button" data-template-id="reset-button" class="btn action-danger canva-button" type="button" style="background: rgb(255, 240, 239); color: rgb(168, 41, 32); font-weight: 700; font-style: normal; font-size: 15px;">Reset</button>
+        </div>
+       </div>
+       <div class="filter-grid">
+        <div>
+         <label data-template-id="filter-date-label" class="field-label canva-text" for="filter-date" style="color: rgb(53, 83, 105); font-weight: 700; font-style: normal; font-size: 15px;">Filter tanggal</label> <input id="filter-date" class="field-input" type="date">
+        </div>
+        <div>
+         <label data-template-id="filter-keyword-label" class="field-label canva-text" for="filter-keyword" style="color: rgb(53, 83, 105); font-weight: 700; font-style: normal; font-size: 15px;">Cari uraian / jenis transaksi</label> <input id="filter-keyword" class="field-input" type="search" placeholder="Ketik kata kunci">
+        </div>
+       </div>
+      </div>
+      <div class="table-wrap">
+       <table aria-label="Tabel Buku Kas Umum">
+        <thead>
+         <tr>
+          <th style="width:48px"><input id="select-all" type="checkbox" aria-label="Pilih seluruh transaksi tampil"></th>
+          <th data-template-id="column-description" class="canva-text" style="color: rgb(63, 90, 110); font-weight: 700; font-style: normal; font-size: 15px;">Uraian</th>
+          <th data-template-id="column-debet" class="number canva-text" style="color: rgb(63, 90, 110); font-weight: 700; font-style: normal; font-size: 15px;">Debet</th>
+          <th data-template-id="column-kredit" class="number canva-text" style="color: rgb(63, 90, 110); font-weight: 700; font-style: normal; font-size: 15px;">Kredit</th>
+         </tr>
+        </thead>
+        <tbody id="transaction-body"></tbody>
+       </table>
+      </div>
+      <div id="empty-state" class="empty-state">
+       <div class="empty-icon" aria-hidden="true">
+        ▤
+       </div>
+       <h3 data-template-id="empty-title" class="canva-text" style="color: rgb(51, 78, 98); font-weight: 700; font-style: normal; font-size: 18px;">Belum ada transaksi</h3>
+       <p data-template-id="empty-description" class="canva-text" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 15px;">Tambahkan transaksi pertama melalui form di atas. Data tersimpan di browser ini.</p>
+      </div>
+     </section>
+    </main>
+    <footer>
+     <p data-template-id="footer-note" class="canva-text" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 15px;">BKU mandiri · Data tersimpan secara lokal di browser Anda.</p>
+    </footer>
+   </div>
+  </div>
+  <div id="confirm-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+   <div data-template-id="confirm-panel" class="modal paper-card canva-panel" style="background: rgb(255, 255, 255);">
+    <div class="modal-top">
+     <div class="warning-symbol" aria-hidden="true">
+      !
+     </div>
+     <div>
+      <h2 id="confirm-title" data-template-id="confirm-title-text" class="canva-text" style="color: rgb(23, 50, 77); font-weight: 700; font-style: normal; font-size: 23px;">Konfirmasi tindakan</h2>
+      <p id="confirm-message"></p>
+     </div>
+    </div>
+    <div class="modal-actions">
+     <button id="cancel-confirm-button" data-template-id="cancel-confirm-button" class="btn action-secondary canva-button" type="button" style="background: rgb(230, 241, 244); color: rgb(18, 70, 94); font-weight: 700; font-style: normal; font-size: 15px;">Batal</button> <button id="confirm-action-button" data-template-id="confirm-action-button" class="btn action-danger canva-button" type="button" style="background: rgb(255, 240, 239); color: rgb(168, 41, 32); font-weight: 700; font-style: normal; font-size: 15px;">Ya, lanjutkan</button>
+    </div>
+   </div>
+  </div>
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  <script>
+    const STORAGE_KEY = "bku-mandiri-transaksi-v1";
+    const SETTINGS_KEY = "bku-mandiri-pengaturan-v1";
+    const state = { records: [], selected: new Set(), pendingAction: null };
+    let sequenceCounter = 0;
+    const $ = id => document.getElementById(id);
+    const rupiah = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 });
+    const numberFormat = new Intl.NumberFormat("id-ID", { maximumFractionDigits: 0 });
+
+    function makeId() {
+      return "bku-" + Date.now() + "-" + Math.random().toString(36).slice(2, 9);
+    }
+
+    function cleanNumber(value) {
+      let text = String(value || "").trim().replace(/\s/g, "");
+      if (!text) return 0;
+      text = text.replace(/^rp\.?/i, "");
+      if (text.includes(",") && text.includes(".")) text = text.replace(/[.,]/g, "");
+      else text = text.replace(/[.,]/g, "");
+      return Number(text.replace(/[^\d-]/g, "")) || 0;
+    }
+
+    function formatDate(iso) {
+      if (!iso) return "-";
+      const parsed = new Date(iso + "T00:00:00");
+      return isNaN(parsed) ? "-" : new Intl.DateTimeFormat("id-ID", {
+        day: "2-digit", month: "2-digit", year: "numeric"
+      }).format(parsed);
+    }
+
+    function sortRecords(records) {
+      return [...records].sort((a, b) =>
+        Number(a.sequence ?? 0) - Number(b.sequence ?? 0) ||
+        Number(a.urutan || 0) - Number(b.urutan || 0) ||
+        String(a.id).localeCompare(String(b.id))
+      );
+    }
+
+    function nextSequence() {
+      return Date.now() * 1000 + sequenceCounter++;
+    }
+
+    function saveRecords() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state.records));
+    }
+
+    function loadRecords() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+        state.records = Array.isArray(saved) ? saved.filter(record =>
+          record && record.id && record.tanggal && record.uraian && Number(record.jumlah) >= 0
+        ).map((record, index) => ({ ...record, sequence: Number.isFinite(Number(record.sequence)) ? Number(record.sequence) : index })) : [];
+      } catch (error) {
+        state.records = [];
+      }
+    }
+
+    function saveSettings() {
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify({
+        filterDate: $("filter-date").value,
+        filterKeyword: $("filter-keyword").value
+      }));
+    }
+
+    function loadSettings() {
+      try {
+        const settings = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "{}");
+        $("filter-date").value = settings.filterDate || "";
+        $("filter-keyword").value = settings.filterKeyword || "";
+      } catch (error) {}
+    }
+
+    function showToast(message, error) {
+      const toast = $("toast");
+      toast.textContent = message;
+      toast.classList.toggle("error", Boolean(error));
+      toast.classList.remove("hidden");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.add("hidden"), 4200);
+    }
+
+    function showFormMessage(message, type) {
+      const target = $("form-message");
+      target.textContent = message;
+      target.className = "message" + (type ? " " + type : "");
+    }
+
+    function resetEntryFields() {
+      $("amount").value = "";
+      $("description").value = "";
+      document.querySelectorAll('input[name="tax-category"]').forEach(input => { input.checked = false; });
+      $("detail-field").classList.add("hidden");
+      $("transaction-type-field").classList.add("hidden");
+      $("transaction-type-options").textContent = "";
+    }
+
+    function updateSummary() {
+      const totalBayar = state.records.filter(r => r.jenis === "BAYAR").reduce((sum, r) => sum + Number(r.jumlah || 0), 0);
+      const totalPpn = state.records.filter(r => r.jenis === "SETOR PPN").reduce((sum, r) => sum + Number(r.jumlah || 0), 0);
+      const totalPph = state.records.filter(r => r.jenis === "SETOR PPh Pasal 22").reduce((sum, r) => sum + Number(r.jumlah || 0), 0);
+      const totalPphKategori = kategori => state.records
+        .filter(r => r.kategori === kategori && String(r.jenis).startsWith("Pungut "))
+        .reduce((sum, r) => sum + Number(r.pajak || 0), 0);
+      $("summary-payment").textContent = rupiah.format(totalBayar);
+      $("summary-ppn").textContent = rupiah.format(totalPpn);
+      $("summary-pph").textContent = rupiah.format(totalPph);
+      $("summary-pph21").textContent = rupiah.format(totalPphKategori("PPh 21"));
+      $("summary-pph23").textContent = rupiah.format(totalPphKategori("PPh 23"));
+      $("summary-pph24").textContent = rupiah.format(totalPphKategori("PPh 24"));
+    }
+
+    function filteredRows() {
+      const date = $("filter-date").value;
+      const keyword = $("filter-keyword").value.trim().toLowerCase();
+      return sortRecords(state.records).filter(record => {
+        const searchable = (record.uraian + " " + record.jenis).toLowerCase();
+        return (!date || record.tanggal === date) && (!keyword || searchable.includes(keyword));
+      });
+    }
+
+    function syncSelectAll() {
+      const visible = filteredRows();
+      const selectAll = $("select-all");
+      selectAll.checked = visible.length > 0 && visible.every(record => state.selected.has(record.id));
+      selectAll.indeterminate = visible.some(record => state.selected.has(record.id)) && !selectAll.checked;
+    }
+
+    function renderTable() {
+      const body = $("transaction-body");
+      body.textContent = "";
+      const rows = filteredRows();
+      rows.forEach(record => {
+        const row = document.createElement("tr");
+        row.dataset.id = record.id;
+
+        const choiceCell = document.createElement("td");
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = state.selected.has(record.id);
+        checkbox.setAttribute("aria-label", "Pilih transaksi");
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) state.selected.add(record.id);
+          else state.selected.delete(record.id);
+          syncSelectAll();
+        });
+        choiceCell.appendChild(checkbox);
+
+        const descCell = document.createElement("td");
+        const tag = document.createElement("span");
+        tag.className = "kind-pill";
+        tag.textContent = record.jenis;
+        const desc = document.createElement("p");
+        desc.className = "desc";
+        desc.textContent = record.uraian;
+        descCell.append(tag, desc);
+
+        const debetCell = document.createElement("td");
+        debetCell.className = "number";
+        const kreditCell = document.createElement("td");
+        kreditCell.className = "number";
+        const amount = Number(record.jumlah || 0);
+        const transactionType = String(record.uraian || record.jenis || "").toLowerCase();
+        debetCell.textContent = transactionType.includes("pungut") ? rupiah.format(amount) : "";
+        kreditCell.textContent = (transactionType.includes("setor") || transactionType.includes("bayar kepada")) ? rupiah.format(amount) : "";
+
+        row.append(choiceCell, descCell, debetCell, kreditCell);
+        body.appendChild(row);
+      });
+
+      $("empty-state").classList.toggle("hidden", rows.length > 0);
+      syncSelectAll();
+    }
+
+    function renderAll() {
+      updateSummary();
+      renderTable();
+    }
+
+    function updateTransactionTypes() {
+      const kategori = document.querySelector('input[name="tax-category"]:checked')?.value || "";
+      $("transaction-type-field").classList.add("hidden");
+      $("transaction-type-options").textContent = "";
+      if (kategori) $("detail-field").classList.remove("hidden");
+      else $("detail-field").classList.add("hidden");
+    }
+
+    function getFormData() {
+      const nominal = cleanNumber($("amount").value);
+      const kategori = document.querySelector('input[name="tax-category"]:checked')?.value || "";
+      const jenisTransaksi = "";
+      const keterangan = $("description").value.trim().replace(/\s+/g, " ");
+      if (!kategori || !keterangan || nominal <= 0) {
+        showFormMessage("Lengkapi kategori pajak, keterangan, dan nominal belanja positif terlebih dahulu.", "error");
+        return null;
+      }
+      showFormMessage("", "");
+      const uraian = kategori === "PPN dan PPh 22" ? kategori + " - " + keterangan : jenisTransaksi + " " + keterangan;
+      return { nominal, kategori, jenisTransaksi, keterangan, uraian };
+    }
+
+    function addAutomatic() {
+      const data = getFormData();
+      if (!data) return;
+      const button = $("auto-add-button");
+      button.disabled = true;
+
+      const ppn = Math.round((100 / 111) * data.nominal * 0.11);
+      const pph = Math.round((100 / 111) * data.nominal * 0.015);
+      const pphKategori = data.kategori === "PPh 21" ? Math.round(data.nominal * 0.05) : Math.round(data.nominal * 0.02);
+      const groupId = makeId();
+      const sequence = nextSequence();
+      const transactionItems = data.kategori === "PPN dan PPh 22" ? [
+        { jenis: "Bayar kepada", jumlah: data.nominal, pajak: 0 },
+        { jenis: "Pungut PPN dari", jumlah: ppn, pajak: ppn },
+        { jenis: "Pungut PPh 22 dari", jumlah: pph, pajak: pph },
+        { jenis: "Setor PPN dari", jumlah: ppn, pajak: ppn },
+        { jenis: "Setor PPh 22 dari", jumlah: pph, pajak: pph }
+      ] : [
+        { jenis: "Bayar Kepada", jumlah: data.nominal, pajak: 0 },
+        { jenis: "Pungut " + data.kategori + " dari", jumlah: pphKategori, pajak: pphKategori },
+        { jenis: "Setor " + data.kategori + " dari", jumlah: pphKategori, pajak: pphKategori }
+      ];
+      let nextIndex = 0;
+      const addNextTransaction = () => {
+        const item = transactionItems[nextIndex];
+        state.records.push({
+          id: makeId(),
+          tanggal: new Date().toISOString().slice(0, 10),
+          uraian: item.jenis + " " + data.keterangan,
+          kategori: data.kategori,
+          keterangan: data.keterangan,
+          jenis: item.jenis,
+          jumlah: item.jumlah,
+          pajak: item.pajak,
+          groupId,
+          sequence,
+          urutan: nextIndex + 1
+        });
+        saveRecords();
+        renderAll();
+        nextIndex += 1;
+
+        if (nextIndex < transactionItems.length) {
+          setTimeout(addNextTransaction, 80);
+          return;
+        }
+
+        resetEntryFields();
+        button.disabled = false;
+        showToast(data.kategori === "PPN dan PPh 22"
+          ? "Lima transaksi otomatis berhasil ditambahkan."
+          : "Tiga transaksi otomatis berhasil ditambahkan.");
+      };
+
+      addNextTransaction();
+    }
+
+    function addManual() {
+      const data = getFormData();
+      if (!data) return;
+      const button = $("manual-add-button");
+      button.disabled = true;
+
+      state.records.push({
+        id: makeId(),
+        tanggal: new Date().toISOString().slice(0, 10),
+        sequence: nextSequence(),
+        uraian: (data.kategori === "PPN dan PPh 22" ? "BAYAR" : data.jenisTransaksi) + " " + data.keterangan,
+        kategori: data.kategori,
+        keterangan: data.keterangan,
+        jenis: data.kategori === "PPN dan PPh 22" ? "BAYAR" : data.jenisTransaksi,
+        jumlah: data.nominal,
+        pajak: 0,
+        groupId: makeId(),
+        urutan: 1
+      });
+      saveRecords();
+      renderAll();
+      resetEntryFields();
+      button.disabled = false;
+      showToast("Transaksi manual berhasil ditambahkan.");
+    }
+
+    function openConfirm(type) {
+      if (type === "delete" && state.selected.size === 0) {
+        showToast("Pilih minimal satu transaksi yang ingin dihapus.", true);
+        return;
+      }
+      state.pendingAction = type;
+      $("confirm-message").textContent = type === "delete"
+        ? "Hapus transaksi yang dipilih? Tindakan ini tidak dapat dibatalkan."
+        : "Reset akan menghapus seluruh transaksi yang tersimpan pada browser ini. Lanjutkan?";
+      $("confirm-modal").classList.remove("hidden");
+      $("confirm-action-button").focus();
+    }
+
+    function closeConfirm() {
+      $("confirm-modal").classList.add("hidden");
+      state.pendingAction = null;
+    }
+
+    function executeConfirm() {
+      if (state.pendingAction === "delete") {
+        state.records = state.records.filter(record => !state.selected.has(record.id));
+        state.selected.clear();
+        showToast("Transaksi terpilih telah dihapus.");
+      } else if (state.pendingAction === "reset") {
+        state.records = [];
+        state.selected.clear();
+        showToast("Buku Kas Umum telah direset.");
+      }
+      saveRecords();
+      renderAll();
+      closeConfirm();
+    }
+
+    function downloadBlob(content, type, filename) {
+      const blob = new Blob([content], { type });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 300);
+    }
+
+    function exportCsv() {
+      const rows = filteredRows();
+      if (!rows.length) {
+        showToast("Tidak ada transaksi tampil untuk diekspor.", true);
+        return;
+      }
+      const escapeCsv = value => "\"" + String(value).replace(/"/g, "\"\"") + "\"";
+      const csv = [
+        ["Tanggal", "Uraian", "Kategori", "Jumlah", "Nilai Pajak"].map(escapeCsv).join(","),
+        ...rows.map(record => [
+          formatDate(record.tanggal),
+          record.uraian,
+          record.kategori,
+          Number(record.jumlah || 0),
+          Number(record.pajak || 0)
+        ].map(escapeCsv).join(","))
+      ].join("\r\n");
+
+      downloadBlob("\uFEFF" + csv, "text/csv;charset=utf-8;", "BKU-" + new Date().toISOString().slice(0, 10) + ".csv");
+      showToast("CSV tabel yang sedang tampil berhasil diekspor.");
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function exportExcel() {
+      const rows = filteredRows();
+      if (!rows.length) {
+        showToast("Tidak ada transaksi tampil untuk diekspor.", true);
+        return;
+      }
+
+      const tableRows = rows.map(record => {
+        const jenis = String(record.jenis || record.uraian || "").toLowerCase();
+        const amount = Number(record.jumlah || 0);
+        const debet = jenis.includes("pungut") ? amount : "";
+        const kredit = (jenis.includes("bayar") || jenis.includes("setor")) ? amount : "";
+        const excelNumber = value => value === "" ? "" : String(value);
+        return "<tr><td>" + escapeHtml(formatDate(record.tanggal)) + "</td><td>" +
+          escapeHtml(record.uraian) + "</td><td>" + escapeHtml(record.kategori) +
+          "</td><td class=\"number\">" + excelNumber(debet) + "</td><td class=\"number\">" +
+          excelNumber(kredit) + "</td></tr>";
+      }).join("");
+
+      const workbook = "<!DOCTYPE html><html><head><meta charset=\"UTF-8\">" +
+        "<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=UTF-8\">" +
+        "<style>table{border-collapse:collapse}th,td{border:1px solid #9ca3af;padding:8px}th{background:#e5eef2;font-weight:bold}td.number{mso-number-format:'\\#\\,\\#\\#0';text-align:right}td:nth-child(1){width:110px}td:nth-child(2){width:600px}td:nth-child(3){width:180px}td:nth-child(4){width:140px}td:nth-child(5){width:140px}</style>" +
+        "</head><body><table><thead><tr><th>Tanggal</th><th>Uraian</th><th>Kategori</th><th>Debet</th><th>Kredit</th></tr></thead><tbody>" +
+        tableRows + "</tbody></table></body></html>";
+
+      downloadBlob("\uFEFF" + workbook, "application/vnd.ms-excel;charset=utf-8;", "BKU-" + new Date().toISOString().slice(0, 10) + ".xls");
+      showToast("File Excel-compatible berhasil diunduh.");
+    }
+
+    function downloadHtml() {
+      const records = JSON.stringify(state.records).replace(/</g, "\\u003c");
+      const settings = JSON.stringify({
+        filterDate: $("filter-date").value,
+        filterKeyword: $("filter-keyword").value
+      }).replace(/</g, "\\u003c");
+
+      let source = "<!doctype html>\n" + document.documentElement.outerHTML;
+      const dataScript = "<script>localStorage.setItem(" + JSON.stringify(STORAGE_KEY) + "," + JSON.stringify(records) +
+        ");localStorage.setItem(" + JSON.stringify(SETTINGS_KEY) + "," + JSON.stringify(settings) + ");<\\/script>";
+      source = source.replace("</body>", dataScript + "\n</body>");
+      downloadBlob(source, "text/html;charset=utf-8;", "BKU.html");
+      showToast("Salinan BKU.html siap digunakan tanpa internet.");
+    }
+
+    function setupEvents() {
+      document.querySelectorAll('input[name="tax-category"]').forEach(input => input.addEventListener("change", updateTransactionTypes));
+      $("transaction-form").addEventListener("submit", event => {
+        event.preventDefault();
+        addAutomatic();
+      });
+      $("manual-add-button").addEventListener("click", addManual);
+      $("filter-date").addEventListener("input", () => { saveSettings(); renderTable(); });
+      $("filter-keyword").addEventListener("input", () => { saveSettings(); renderTable(); });
+      $("select-all").addEventListener("change", event => {
+        filteredRows().forEach(record => {
+          if (event.target.checked) state.selected.add(record.id);
+          else state.selected.delete(record.id);
+        });
+        renderTable();
+      });
+      $("delete-selected-button").addEventListener("click", () => openConfirm("delete"));
+      $("reset-button").addEventListener("click", () => openConfirm("reset"));
+      $("cancel-confirm-button").addEventListener("click", closeConfirm);
+      $("confirm-action-button").addEventListener("click", executeConfirm);
+      $("export-button").addEventListener("click", exportCsv);
+      $("excel-button").addEventListener("click", exportExcel);
+      $("html-button").addEventListener("click", downloadHtml);
+      $("confirm-modal").addEventListener("click", event => {
+        if (event.target === $("confirm-modal")) closeConfirm();
+      });
+    }
+
+    function init() {
+      loadRecords();
+      loadSettings();
+      setupEvents();
+      renderAll();
+    }
+
+    init();
+  </script>
+ 
+</body></html>
